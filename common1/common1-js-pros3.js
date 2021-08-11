@@ -21,13 +21,13 @@ console.log(addAndtriple(2,3)); // 15;
 
 const lst = [1,2,3,4,5,6];
 
-const wrapper = (func, arr) => {
+const getSum = (func, arr) => {
     return arr.filter(func)
         .reduce((prev, curr) => prev+curr);
 }
 
-const evenNumberSum = wrapper((value) => value%2 === 0, lst);
-const oddNumberSum = wrapper((value) => value%2 !== 0, lst);
+const evenNumberSum = getSum((value) => value%2 === 0, lst);
+const oddNumberSum = getSum((value) => value%2 !== 0, lst);
 
 console.log(evenNumberSum); // 12
 console.log(oddNumberSum); // 9
