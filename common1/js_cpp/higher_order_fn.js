@@ -6,13 +6,20 @@
     
     // 다른 함수의 인자로 전달
     
-    const double = (addFunc, a, b) => 2*addFunc(a,b); 
+    const double = (addFunc, a, b) => 2 * addFunc(a, b); 
     
     console.log(double(add, 2,3)); // 10;
     
     // 다른 함수의 결과로 리턴
     
-    const multiply3 = (addFunc) => (a,b) => 3*addFunc(a,b);
+    const multiply3 = (addFunc) => (a, b) => 3 * addFunc(a, b);
+
+    // 위와 같은 함수
+    // function multiply3 (addFunc) {
+    //   return function (a, b) {
+    //     return 3 * addFunc(a, b);
+    //   }
+    // }
     
     const addAndtriple = multiply3(add);
     

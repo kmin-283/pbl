@@ -10,4 +10,6 @@
     phone_number: "010-1234-5678",
     name: "kmin",
   };
+
+  console.log(printPerson(person)) // 10, 010-1234-5678, kmin
 })();
