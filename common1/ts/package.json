@@ -1,9 +1,0 @@
-{
-  "scripts": {
-    "init-tsc" :"./node_modules/.bin/tsc --init",
-    "build": "./node_modules/.bin/tsc"
-  },
-  "dependencies": {
-    "typescript": "^4.3.5"
-  }
-}
