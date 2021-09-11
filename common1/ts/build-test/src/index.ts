@@ -1,7 +1,7 @@
 import * as _ from 'lodash';
 
 function component() {
-  const element = document.createElement('div');
+  const element: HTMLDivElement = document.createElement('div');
 
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 

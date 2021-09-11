@@ -1,7 +1,8 @@
 {
   "scripts": {
     "init-tsc": "./node_modules/.bin/tsc --init",
-    "build": "./node_modules/.bin/tsc"
+    "build": "./node_modules/.bin/tsc",
+    "webpack-build": "npx webpack --config webpack.config.js"
   },
   "dependencies": {
     "@types/lodash": "^4.14.172",
